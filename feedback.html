@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #e11e1e;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Feedback Form</h2>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="rating">Rating</label>
+        <select id="rating" name="rating">
+            <option value="5">Excellent</option>
+            <option value="4">Good</option>
+            <option value="3">Average</option>
+            <option value="2">Poor</option>
+            <option value="1">Terrible</option>
+        </select>
+
+        <label for="questions">Any questions</label>
+        <textarea id="questions" name="questions" rows="4" placeholder="Do you have any questions"></textarea>
+
+        <label for="comments">Additional comments (optional)</label>
+        <textarea id="comments" name="comments" rows="3" placeholder="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
